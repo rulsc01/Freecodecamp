@@ -1,0 +1,73 @@
+
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+        <h1 id="title" class="title">Comida favorita </h1>
+        <p id="description" class="description">esta es una encuesta de prueba</p>
+    </header>
+    <main>
+      <form class="survey-form" id="survey-form" action="index.html" method="post">
+          <div class="survey-item">
+            <label for="name" id="name-label">Nombre</label>
+            <input class="field" type="text" required name="name" id="name" value="" placeholder="ingrese su nombre">
+          </div>
+          <div class="survey-item">
+            <label for="email" id="email-label">Correo electronico</label>
+            <input class="field" type="email" required name="email" id="email" value="" placeholder="ingrese correo electronico">
+          </div>
+          <div class="survey-item">
+            <label for="number" id="number-label">Edad</label>
+            <input class="field" min="0" max="100" type="number" name="number" id="number" value="" placeholder="ingrese su edad">
+          </div>
+          <div class="survey-item">
+            <label for="dropdown">Que tamal te gusta mas?</label>
+            <select class="dropdown" name="dropdown" id="dropdown" >
+              <option value="null" selected disabled>escoje una opcion</option>
+              <option value="tamal_pasa">tamal dulce</option>
+              <option value="tamal_normal">tamal normal</option>
+              
+             
+            </select>
+          </div>
+          <div class="survey-item" id="radio-buttons">
+            <label for="score" id="score-label">Que le gusta comer</label>
+            <label for="completely-satisfied" class="radio-label">
+              <input id="completely-satisfied" type="radio" name="score" value="Caldo de Res">Caldo de res
+            </label>
+            <label for="satisfied" class="radio-label">
+              <input id="Pepian" type="radio" name="score" value="Satisfied">Pepian
+            </label>
+         
+            <label for="Estofado" class="radio-label">
+              <input id="unsatisfied" type="radio" name="score" value="Unsatisfied">Estofado
+            </label>
+          </div>
+          <div class="survey-item" id="checkboxes">
+            <label for="extras">come los tamales con limon?</label>
+            <label for="charger" class="radio-label">
+              <input id="charger" type="checkbox" name="extras" value="Charger">Si
+            </label>
+            <label for="headset" class="radio-label">
+              <input id="headset" type="checkbox" name="extras" value="Headset">No
+            </label>
+  
+            
+          </div>
+          <div class="survey-item" id="textitem">
+            <label for="comment">
+             Como seria tu tamal perfecto
+            </label>
+            <textarea id="comment" name="comment" rows="8" cols="80" placeholder="Describelo"></textarea>
+          </div>
+          <div class="survey-item">
+            <button id="submit" type="submit" name="submit" submit>Enviar</button>
+          </div>
+      </form>
+    </main>
+  </body>
+</html>
